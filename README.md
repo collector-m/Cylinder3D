@@ -19,7 +19,7 @@
 - Cython
 - [torch-scatter](https://github.com/rusty1s/pytorch_scatter)
 - [nuScenes-devkit](https://github.com/nutonomy/nuscenes-devkit) (optional for nuScenes)
-- [spconv](https://github.com/traveller59/spconv)
+- [spconv](https://github.com/traveller59/spconv) (tested with spconv==1.2.1 and cuda==10.2)
 
 ## Data Preparation
 
@@ -57,6 +57,7 @@
 		├──sweeps
 		├──maps
 
+		
 ```
 
 ## Training
@@ -73,5 +74,27 @@
 - [ ] Support more datasets, including A2D2 and etc.  
 - [ ] Integrate LiDAR Panoptic Segmentation into the codebase.
 
+
+## Reference
+
+If you find our work useful in your research, please consider citing our paper:
+```
+@article{zhu2020cylindrical,
+  title={Cylindrical and Asymmetrical 3D Convolution Networks for LiDAR Segmentation},
+  author={Zhu, Xinge and Zhou, Hui and Wang, Tai and Hong, Fangzhou and Ma, Yuexin and Li, Wei and Li, Hongsheng and Lin, Dahua},
+  journal={arXiv preprint arXiv:2011.10033},
+  year={2020}
+}
+
+#for LiDAR panoptic segmentation
+@article{hong2020lidar,
+  title={LiDAR-based Panoptic Segmentation via Dynamic Shifting Network},
+  author={Hong, Fangzhou and Zhou, Hui and Zhu, Xinge and Li, Hongsheng and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2011.11964},
+  year={2020}
+}
+```
+
+
 ## Acknowledgments
-We thanks for the opensource codebases, [PolarSeg](https://github.com/edwardzhou130/PolarSeg)  and [SPVNAS](https://github.com/mit-han-lab/e3d)
+We thanks for the opensource codebases, [PolarSeg](https://github.com/edwardzhou130/PolarSeg), [spconv](https://github.com/traveller59/spconv) and [SPVNAS](https://github.com/mit-han-lab/e3d)
